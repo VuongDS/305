@@ -69,6 +69,15 @@ It's conclude two column:
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
 """## Cleaning the text"""
+# Store word in a list:
+text_contain_spam = []
+for text in email_spam.text:
+  text_contain_spam.append(text)
+
+
+text_contain_not_spam = []
+for text in email_not_spam.text:
+  text_contain_not_spam.append(text)
 
 from gensim.utils import simple_preprocess
 
