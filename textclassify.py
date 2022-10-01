@@ -182,12 +182,8 @@ def model_predict(*lst_predict):
   for lst in lst_predict:
     label, prob = model_tune.predict(lst)
     if list(label) == ['__label__0']:
-      print('The sentence "{}" is NOT a mail spam !'.format(lst))
+      print('The sentence "{}" is NOT a mail spam !'.format(lst[:70]))
     else:
-      print('The sentence "{}" is a mail spam !'.format(lst))
+      print('The sentence "{}" is a mail spam !'.format(lst[:70]))
   return None
 
-def test(a):
-  sum = 5
-  b = sum + a
-  return b
