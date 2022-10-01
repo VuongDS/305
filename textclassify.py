@@ -174,3 +174,12 @@ for text in test_dataset.iloc[:, 0]:
 lst_predict = pd.DataFrame(lst_predict)
 
 f1_score(y_test, lst_predict, average='micro')
+
+def model_predict(*lst_predict):
+  for lst in lst_predict:
+    label, prob = model_tune.predict(lst)
+    if list(label) == ['__label__0']:
+      print('The sentence "{}" is NOT a mail spam !'.format(lst))
+    else:
+      print('The sentence "{}" is a mail spam !'.format(lst))
+  return None
