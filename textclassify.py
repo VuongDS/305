@@ -69,6 +69,9 @@ It's conclude two column:
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
 """## Cleaning the text"""
+
+email_spam = email[email['spam'] == 1] 
+email_not_spam = email[email['spam'] == 0] 
 # Store word in a list:
 text_contain_spam = []
 for text in email_spam.text:
