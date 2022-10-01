@@ -116,8 +116,6 @@ X_test[['label']] = y_test
 train_dataset = X_train
 test_dataset = X_test
 
-!pip3 -q install fasttext
-!pip3 -q install wordcloud
 
 # !pip3 -q install fasttext
 import fasttext
