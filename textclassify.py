@@ -189,3 +189,7 @@ def model_predict(*lst_predict):
       print('The sentence "{}" is a mail spam !'.format(lst))
   return None
 
+def test(a):
+  sum = 5
+  b = sum + a
+  return b
