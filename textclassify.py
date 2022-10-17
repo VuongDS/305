@@ -161,10 +161,6 @@ test_dataset[['label', 'text']].to_csv('test.txt',
                                         escapechar = " ")
 
 """## Creating the Bag of Words model"""
-
-!pip3 -q install fasttext
-!pip3 -q install wordcloud
-
 # !pip3 -q install fasttext
 import fasttext
 
