@@ -124,9 +124,7 @@ y_test_au.iloc[:, 0] = y_test_au.iloc[:, 0].apply(lambda x: '__label__' + str(x)
 
 # X_train_au = new_train(X_train_au)
 
-!wget -q https://raw.githubusercontent.com/VuongDS/305/main/train_au_final.csv
-
-dts_au = pd.read_csv('/content/train_au_final.csv', header = None)
+dts_au = pd.read_csv('https://raw.githubusercontent.com/VuongDS/305/main/train_au_final.csv', header = None)
 dts_au = dts_au.rename(columns={0: "text", 1: "spam"})
 
 dts_au.shape
