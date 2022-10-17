@@ -203,7 +203,5 @@ def model_predict(*lst_predict):
       print('The sentence "{}"... is a mail spam !'.format(lst[:100]))
   return None
 
-model_predict("I give you a paper on the top of the table")
 
-model_predict("I have you", 'give me money now')
 
